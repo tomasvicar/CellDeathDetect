@@ -1,2 +1,2 @@
 # CellDeathDetect
-Method for detection and classification of cell death in Quantitative Phase images.
+Method for detection and classification of cell death in Quantitative Phase image sequances.
