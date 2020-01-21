@@ -1,0 +1,35 @@
+skripty dìlají jednotlivé kroky v poøadí dle èísel
+
+1)prepare_data_1.m 
+- vytvoøí normalizovaná a standardizovaná data která se používají pozdìji
+-barvièky normalizuje odeètením prùmìru a podìlením smìrodatnou odchylkou
+-qpi a jádra navíc pøevádí na rozzsah 0-1
+-vytvoøí mixovaný obrázek qpi a jader, což se pozdìji používá pro vykreslování
+
+
+2)manual_init_2.m
+-slouží pro vytvoøení manuální inicializace trackování 
+-nìco detekuje automaticky a pak spustí manuální úpravu (levá pravé tlaèítko miši a pak zavøít...)
+-výsledek uloží do mat souboru
+
+
+3)nuclei_tracking_3.m
+-provede trackování jader pomocí GMM (viz èlánek)
+-lépe funguje když se jde od konce (posledního obrázku)
+
+
+
+4)cell_segmetnation_4.m
+-na základì seedù z trackovaných jader provede segmentaci bunìk pomocí MRV popsaného v èlánku
+
+
+5)mask_filtration_5.m
+-odstraní špatnì trackované buòky 
+-podle toho že se nedostateènì pøekrývají s pøedchozím snímkem
+
+
+
+
+
+
+
